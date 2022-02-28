@@ -9,13 +9,13 @@ body {
 
 div.content {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;
-   /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);;
-    overflow: visible;
+    margin: 40px 8px 80px 8px;
+    padding: 0px 8px 20px 8px;
+    /* min-width: 350px; */
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible
 }
+
 h1 {
     text-align: center;
     margin-top: 5px;
@@ -68,18 +68,18 @@ table.info {
     color: white;
     font-family: Arial;
     font-size: 14px;
-    height: 80px;
+    height: 50px;
 }
 
 table.info td {
     text-align: center;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 table.info th {
     vertical-align: bottom;
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 8px;
 }
 
@@ -92,11 +92,11 @@ img.info {
 }
 
 div.col {
-    width: 45%;
+    width: 100%;
     margin-top: 25px;
 }
 
-div.col  h2{
+div.col  h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
@@ -107,11 +107,12 @@ div.col  h2{
 div.col1 {
     /* background-color: lightblue; */
     display: inline-block;
-    margin-right: 10%;
+    /* margin-right: 10%; */
+    margin-bottom: 20px;
 }
 
 div.col2 {
-    float: right;
+    /* float: right; */
 }
 
 div.kotak p {
@@ -152,4 +153,46 @@ table.instructions td{
 
 table.instructions tr{
     height: 40px;
+}
+
+/* desktop style */
+@media only screen and (min-width: 768px) {
+    div.content {
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+    }
+
+    table.info {
+        height: 80px;
+    }
+    
+    table.info td {
+        font-size: 14px;
+    }
+    
+    table.info th {
+        font-size: 16px;
+    }
+
+    div.col {
+        width: 45%;
+    }
+    
+    div.col1 {
+        margin-right: 10%;
+    }
+    
+    div.col2 {
+        float: right;
+    }
+}
+
+/* very large screen */
+@media only screen and (min-width: 900px) {
+    div.content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 650px;
+    }
 }
